@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+}
+img{
+    border-radius: 50%;
+}
+.header{
+    margin-bottom: 5%;
+    padding: 2%;
+}
+.header p{
+    font-size: small;
+}
+.info {
+    background-color: green;
+    border-radius: 40px;
+    padding: 1%;
+
+}
+
+.left {
+    width: 60%;
+    padding: 2%;
+}
+
+.right {
+    width: 40%;
+    padding: 2%;
+}
+
+.content {
+    display: flex;
+}
+.profile span{
+
+    font-size: x-large;
+    border-bottom: green 5px solid;
+}
+.add{
+    color: grey;
+}
+@media only screen and (max-width: 600px) {
+    .content{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
