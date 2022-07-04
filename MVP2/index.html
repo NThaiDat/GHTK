@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7466eb4978.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<header>
+    <div class="header__top text-white">
+        <div class="container">
+            <div class="header__topLeft">
+                <ul class="contact_info">
+                    <li class="contact_info__Item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#"> info@yoursite.com </a>
+                    </li>
+                    <li class="contact_info__Item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> 123-456-7890</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__topRight flex justify-end items-center">
+                <span>Follow Us:</span>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <div class="login_register">
+                    <a href="#">Login</a>
+                    <span>/</span>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="headerMenu">
+            <div class="headerMenu__logo">
+                <img src="img/logo.png" alt="logo" width="180" height="49">
+            </div>
+            <div class="headerMenu__menu flex justify-end">
+                <ul>
+                    <li><a href="#">Home
+                        <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <li><a href="#">About
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Services
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Blog
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Contact
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<div class="container">
+    <div class="sliderHeader">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/thumbnail.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/news_image_1.jpeg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

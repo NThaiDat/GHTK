@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .confirmButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--<canvas>-->
+<!--    <iframe src="https://cdn.akamai.steamstatic.com/steam/apps/256893207/movie480_vp9.webm?t=1655981908"></iframe>-->
+<!--</canvas>-->
+
+<canvas id="draw"></canvas>
+<div id="confirmDialog" style="bottom:25%; left:25%;position: fixed;display: none; background-color: white">
+    <p>Bạn có muốn lưu ảnh này</p>
+    <canvas id="cutImg"></canvas>
+    <br>
+    <a href="" download="myImg.jpg" onclick="downloadImg(this)">
+        <button id="yesButton" class="confirmButton">
+            Yes
+        </button>
+    </a>
+    <button id="noButton" class="confirmButton" onclick="confirmDialog.style.display='none'">No</button>
+</div>
+</body>
+<script>
+    var confirmDialog = document.getElementById('confirmDialog');
+    var body = document.getElementById('draw');
+    var ctx = body.getContext('2d');
+    var img = new Image();
+    img.src = "hihi.jpg";
+    // img.src = "video.mp4";
+    var picData;
+    img.onload = function () {
+        ctx.canvas.width = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        ctx.drawImage(img, 0, 0);
+    };
+
+    var cutImage = document.getElementById('cutImg');
+    var ctx2 = cutImage.getContext('2d');
+
+
+    // img.setAttribute('crossOrigin', '');
+    img.crossOrigin = "Anonymous";
+    document.addEventListener('click', clickAddEvent)
+    var left;
+    var Top;
+    var right;
+    var bottom;
+
+    function getTopLeft() {
+        clearCanvas()
+        ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height);
+        left = event.x
+        Top = event.y;
+    }
+
+    function getRightBottom() {
+        bottom = event.y;
+        right = event.x
+        console.log(left + " " + Top + " " + right + " " + bottom)
+    }
+
+    function clickAddEvent() {
+        document.addEventListener('mousedown', getTopLeft);
+        document.addEventListener('mouseup', drawRectangle);
+    }
+
+    function clearCanvas() {
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    }
+
+    function drawRectangle() {
+        getRightBottom()
+        ctx.beginPath();
+        ctx.moveTo(left, Top);
+        ctx.lineTo(right, Top);
+        ctx.stroke();
+        ctx.moveTo(left, Top);
+        ctx.lineTo(left, bottom);
+        ctx.stroke();
+        ctx.moveTo(left, bottom);
+        ctx.lineTo(right, bottom);
+        ctx.stroke();
+        ctx.moveTo(right, Top);
+        ctx.lineTo(right, bottom);
+        ctx.stroke();
+        picData = ctx.getImageData(left, bottom, right - left, Top - bottom);
+        // ctx.putImageData(picData,0,0);
+        drawCutImg()
+        document.removeEventListener('mousedown', getTopLeft)
+        document.removeEventListener('mouseup', drawRectangle)
+    }
+
+    function drawCutImg() {
+        confirmDialog.style.display = 'block';
+        console.log(ctx2.width + " " + ctx2.height)
+        ctx2.clearRect(0, 0, ctx2.width, ctx2.height);
+        ctx2.canvas.width = parseInt(right) - parseInt(left);
+        ctx2.canvas.height = -parseInt(Top) + parseInt(bottom) + 50;
+        ctx2.putImageData(picData, 0, 0);
+    }
+
+    function downloadImg(el) {
+        let imgUrl = cutImage.toDataURL("image/png");
+        el.href = imgUrl;
+    }
+
+</script>
+</html>
