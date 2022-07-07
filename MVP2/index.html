@@ -6,7 +6,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7466eb4978.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
 </head>
 <body>
 <header>
@@ -62,22 +61,770 @@
             </div>
 
         </div>
-
     </div>
 </header>
-<div class="container">
-    <div class="sliderHeader">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="img/thumbnail.jpg" style="width:100%">
+<div class="sliderHeader">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/thumbnail.jpg">
+            <div class="container">
+                <div class="slideContent">
+                    <div class="slideContent__header">
+                        <h1> Best LMS Education <br> WordPress Theme</h1>
+                    </div>
+                    <div class="slideContent__text">
+                        Lorem dummy text of the printing and typesetting industry lorem ipsum has been the industry's
+                        standard dummy text.
+                    </div>
+                    <div class=" slideContent__button">
+                        <button class="buttonApply slideButton">Apply Now</button>
+                        <button class="buttonLearnMore slideButton">Learn More</button>
+                    </div>
+                </div>
             </div>
-            <div class="mySlides fade">
-                <img src="img/news_image_1.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade" style="display: none">
+            <img src="img/slide.jpg">
+            <div class="container">
+                <div class="slideContent">
+                    <div class="slideContent__header">
+                        <h1> Choose The Right <br> Theme for Education</h1>
+                    </div>
+                    <div class="slideContent__text">
+                        Lorem dummy text of the printing and typesetting industry lorem ipsum has been the industry's
+                        standard dummy text.
+                    </div>
+                    <div class=" slideContent__button">
+                        <button class="buttonApply slideButton">Apply Now</button>
+                        <button class="buttonLearnMore slideButton">Learn More</button>
+                    </div>
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <i class="fa-solid fa-angle-left prev" onclick="plusSlides(-1)"></i>
+        <i class="fa-solid fa-angle-right next" onclick="plusSlides(1)"></i>
+    </div>
+</div>
+<div class="container bodyContent">
+    <div class="slideLearn flex">
+        <h2>Best Platform to Learn Everything</h2>
+        <div class="flex items-baseline">
+        <span class="flex items-center justify-center arrow-left">
+            <i class="fa-solid fa-angle-left "></i></span>
+            <div class="slideLearn__slide flex items-baseline    ">
+                <div class="slideLearn__item " style="background-color:#FF6F6F ">
+                    <div class="flex items-center justify-center">
+                        <img src="img/events.png" alt="">
+                    </div>
+                    <a href="#">Events</a>
+                </div>
+                <div class="slideLearn__item " style="background-color:#4886FF ">
+                    <div class="flex items-center justify-center">
+                        <img src="img/admissions.png" alt="">
+                    </div>
+                    <a href="#">Admissions</a>
+                </div>
+
+                <div class="slideLearn__item " style="background-color:#009688 ">
+                    <div class="flex items-center justify-center">
+                        <img src="img/notice.png" alt="">
+                    </div>
+                    <a href="#">Notice</a>
+                </div>
+                <div class="slideLearn__item " style="background-color:#F6316F ">
+                    <div class="flex items-center justify-center">
+                        <img src="img/courses.png" alt="">
+                    </div>
+                    <a href="#">Courses</a>
+                </div>
+            </div>
+            <span class="flex items-center justify-center arrow-right">
+            <i class="fa-solid fa-angle-right"></i>
+        </span>
+        </div>
+    </div>
+
+</div>
+<div class="aboutUs__backGround">
+    <div class="container">
+        <div class="aboutUs grid grid-cols-2">
+            <div class="aboutUs__left">
+                <p class="divContent__headerText">About Us</p>
+                <div class="Yellow__line"></div>
+                <h2 class="headerText">Welcome to Edubin</h2>
+                <div class="aboutUs__left__contentText">
+                    <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
+                        equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
+                        accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. </p>
+                    <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                        amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
+                    <p>Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                        amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
+                </div>
+                <button>Explore More</button>
+            </div>
+            <div class="aboutUs__right">
+                <div class="aboutUs__right__content">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>
+                            <div class="aboutUs__right__content__item">
+                                <h4>World University Convocation</h4>
+                                <span>
+                                <i class="fa-solid fa-clock"></i>
+                                 12:00 AM  to 11:59 PM
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aboutUs__right__content__item">
+                                <span>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                31. March
+                                    </span>
+                                <h4>February Education Conferences</h4>
+                                <span>
+                                <i class="fa-solid fa-clock"></i>
+                                  12:00 AM  to 1:30 AM
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aboutUs__right__content__item">
+
+                                <h4>The Games Education Summit</h4>
+                                <span>
+                                <i class="fa-solid fa-clock"></i>
+                                 12:00 AM  to 11:59 PM
+                            </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="applyNow">
+    <div class="container">
+        <div class="grid grid-cols-2">
+            <div class="applyNow__left">
+                <h2>Apply for Fall 2019</h2>
+                <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis
+                    sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.
+                </p>
+                <button class="buttonApply">Apply Now</button>
+            </div>
+            <div class="applyNow__right">
+                <h2>Apply for Fall 2019</h2>
+                <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis
+                    sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.
+                </p>
+                <button class="buttonApply">Apply Now</button>
+            </div>
         </div>
     </div>
 </div>
+<div class="ourCourses">
+    <div class="container">
+        <p class="divContent__headerText">Our Courses</p>
+        <div class="Yellow__line"></div>
+        <div class="ourCourses__header flex justify-between items-baseline">
+            <h2 style="display: inline-block" class=" headerText">Featured Courses</h2>
+            <div class="ourCourses__header__button ">
+                <button>
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="ourCourses__content flex justify-between">
+            <div class="ourCourses__content__item grid gird-row-2">
+                <div class="ourCourses__content__item__img">
+                    <img src="img/coursesItem/2554.jpg" alt="">
+                </div>
+                <div class="ourCourses__content__item__price">
+                    <span>Free</span>
+                </div>
+                <div class="ourCourses__content__item__content">
+                    <div class="ourCourses__content__item__content__Rate flex ">
+                        <div class="ourCourses__content__star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>(1 review)</span>
+                    </div>
+                    <div class="ourCourses__content__item__content__title">
+                        <a href="#">
+                            C Programming Tutorials for Beginners
+                        </a>
+                    </div>
+
+                    <div class="ourCourses__content__item__content__bottom flex justify-between">
+                        <div class="flex ">
+                            <img src="img/student_1.jpg" alt="student avatar">
+                            <span>Tom Hardy</span>
+                        </div>
+                        <div class="flex items-baseline" style="padding-top: 3%">
+                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
+                            <span>10</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="ourCourses__content__item grid gird-row-2">
+                <div class="ourCourses__content__item__img">
+                    <img src="img/coursesItem/2554.jpg" alt="">
+                </div>
+                <div class="ourCourses__content__item__price">
+                    <span>Free</span>
+                </div>
+                <div class="ourCourses__content__item__content">
+                    <div class="ourCourses__content__item__content__Rate flex ">
+                        <div class="ourCourses__content__star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>(1 review)</span>
+                    </div>
+                    <div class="ourCourses__content__item__content__title">
+                        <a href="#">
+                            C Programming Tutorials for Beginners
+                        </a>
+                    </div>
+
+                    <div class="ourCourses__content__item__content__bottom flex justify-between">
+                        <div class="flex ">
+                            <img src="img/student_1.jpg" alt="student avatar">
+                            <span>Tom Hardy</span>
+                        </div>
+                        <div class="flex items-baseline" style="padding-top: 3%">
+                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
+                            <span>10</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="ourCourses__content__item grid gird-row-2">
+                <div class="ourCourses__content__item__img">
+                    <img src="img/coursesItem/2554.jpg" alt="">
+                </div>
+                <div class="ourCourses__content__item__price">
+                    <span>Free</span>
+                </div>
+                <div class="ourCourses__content__item__content">
+                    <div class="ourCourses__content__item__content__Rate flex ">
+                        <div class="ourCourses__content__star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>(1 review)</span>
+                    </div>
+                    <div class="ourCourses__content__item__content__title">
+                        <a href="#">
+                            C Programming Tutorials for Beginners
+                        </a>
+                    </div>
+
+                    <div class="ourCourses__content__item__content__bottom flex justify-between">
+                        <div class="flex ">
+                            <img src="img/student_1.jpg" alt="student avatar">
+                            <span>Tom Hardy</span>
+                        </div>
+                        <div class="flex items-baseline" style="padding-top: 3%">
+                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
+                            <span>10</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="ourFacilities grid grid-cols-2">
+    <div class="ourFacilities__video flex items-center justify-center">
+        <div class="ourFacilities__video__button ">
+            <button>
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </div>
+    <div class="ourFacilities__content">
+        <div class="ourFacilities__content__header">
+            <h2>Our Facilities</h2>
+        </div>
+        <div class="ourFacilities__content__item">
+            <div class="flex">
+                <div class="ourFacilities__grid__img flex items-center">
+                    <img src="img/Facilities/facilites_certificate.png" alt="facilites_certificate">
+                </div>
+                <div class="ourFacilities__grid__item">
+                    <div class="ourFacilities__grid__item__header">
+                        Global Certificate
+                    </div>
+                    <div class="ourFacilities__grid__item__content">
+                        Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem
+                        nibhutis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ourFacilities__content__item">
+            <div class="flex">
+                <div class="ourFacilities__grid__img flex items-center">
+                    <img src="img/Facilities/facilites_support.png" alt="facilites_certificate">
+                </div>
+                <div class="ourFacilities__grid__item">
+                    <div class="ourFacilities__grid__item__header">
+                        Alumni Support
+                    </div>
+                    <div class="ourFacilities__grid__item__content">
+                        Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem
+                        nibhutis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ourFacilities__content__item">
+            <div class="flex">
+                <div class="ourFacilities__grid__img flex items-center">
+                    <img src="img/Facilities/facilites_book.png" alt="facilites_certificate">
+                </div>
+                <div class="ourFacilities__grid__item">
+                    <div class="ourFacilities__grid__item__header">
+                        Books & Library
+                    </div>
+                    <div class="ourFacilities__grid__item__content">
+                        Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem
+                        nibhutis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teacher">
+    <div class="container">
+        <div class="grid grid-cols-2">
+            <div class="teacher__info">
+                <p class="divContent__headerText">Teachers</p>
+                <div class="Yellow__line"></div>
+                <div class="teacher__info__content">
+                    <h2 class=" headerText">Meet our Teachers</h2>
+                    <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
+                        equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
+                        accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris.</p>
+                    <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                        amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
+                    <p>Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                        amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
+                </div>
+                <button>Career With Us</button>
+            </div>
+            <div class="teacher__image flex justify-between flex-wrap flex-row">
+                <div class="teacher__image__item">
+                    <img src="img/teacher/teacher_1.jpg" alt="teacher_1">
+                    <div class="teacher__image__item__content">
+                        <div class="teacher__image__item__content__area">
+                            <h6>Damian Green</h6>
+                            <span>Chairman </span>
+                            <div class="teacher__image__item__content__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher__image__item">
+                    <img src="img/teacher/teacher_2.jpg" alt="teacher_1">
+                    <div class="teacher__image__item__content">
+                        <div class="teacher__image__item__content__area">
+                            <h6>Rebeak Alig</h6>
+                            <span>Art Teacher </span>
+                            <div class="teacher__image__item__content__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher__image__item">
+                    <img src="img/teacher/teacher_3.jpg" alt="teacher_1">
+                    <div class="teacher__image__item__content">
+                        <div class="teacher__image__item__content__area">
+                            <h6>Hanna Ben</h6>
+                            <span>Teacher </span>
+                            <div class="teacher__image__item__content__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher__image__item">
+                    <img src="img/teacher/teacher_4.jpg" alt="teacher_1">
+                    <div class="teacher__image__item__content">
+                        <div class="teacher__image__item__content__area">
+                            <h6>Mark Alen</h6>
+                            <span>Teacher</span>
+                            <div class="teacher__image__item__content__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="feedback">
+    <div class="feedback__overlay"></div>
+    <div class="grid grid-rows-2 container" style="position: relative">
+        <div class="feedback__header">
+            <p class="divContent__headerText" style="color:white;;">Teachers</p>
+            <div class="Yellow__line" style="background-color: white"></div>
+            <h2 class=" headerText">What Students Say</h2>
+        </div>
+        <div class="feedback__content">
+            <div class="grid grid-cols-2">
+                <div class="feedback__content__item flex">
+                    <img src="img/feedback/student_1.jpg" alt="student1" class="feedback__img">
+                    <i class="fa-solid fa-quote-right quote-right flex justify-center items-center"></i>
+                    <div class="feedback__content__item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore Lorem ipsum dolor sit amet.</p>
+                        <h6>Monica Blews</h6>
+                        <p>CFO Apple Corp</p>
+                    </div>
+                </div>
+                <div class="feedback__content__item flex">
+                    <img src="img/feedback/student_1.jpg" alt="student1" class="feedback__img">
+                    <i class="fa-solid fa-quote-right quote-right flex justify-center items-center"></i>
+                    <div class="feedback__content__item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore Lorem ipsum dolor sit amet.</p>
+                        <h6>Monica Blews</h6>
+                        <p>CFO Apple Corp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="bookStore">
+    <div class="container">
+        <div class="bookStore__header grid grid-cols-2">
+            <div class="bookStore__header__text">
+                <p class="divContent__headerText">Book Store</p>
+                <div class="Yellow__line"></div>
+                <h2 class=" headerText">Publications</h2>
+            </div>
+            <div class="bookStore__header__button flex items-center justify-end">
+                <button>All Products</button>
+            </div>
+        </div>
+        <div class="bookStore__content flex">
+            <div class="bookStore__content__item">
+
+                <div class="bookStore__content__item__img flex items-center justify-center ">
+                    <img src="img/BookStore/bk18.jpg" alt="book">
+                    <div class="bookStore__content__item__overlay flex items-center justify-center ">
+                        <div class="bookStore__cart__list flex">
+                            <i class="fa-solid fa-cart-shopping flex items-center justify-center"></i>
+                            <i class="fa-solid fa-magnifying-glass flex items-center justify-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookStore__content__item__text">
+                    <h2>Book 9</h2>
+                    <p>£45</p>
+                </div>
+            </div>
+            <div class="bookStore__content__item">
+                <div class="bookStore__content__item__img flex items-center justify-center ">
+                    <img src="img/BookStore/bk17.jpg" alt="book">
+                    <div class="bookStore__content__item__overlay flex items-center justify-center ">
+                        <div class="bookStore__cart__list flex">
+                            <i class="fa-solid fa-cart-shopping flex items-center justify-center"></i>
+                            <i class="fa-solid fa-magnifying-glass flex items-center justify-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookStore__content__item__text">
+                    <h2>Book 8</h2>
+                    <p>£20</p>
+                </div>
+            </div>
+            <div class="bookStore__content__item">
+
+                <div class="bookStore__content__item__img flex items-center justify-center ">
+                    <img src="img/BookStore/bk16.jpg" alt="book">
+                    <div class="bookStore__content__item__overlay flex items-center justify-center ">
+                        <div class="bookStore__cart__list flex">
+                            <i class="fa-solid fa-cart-shopping flex items-center justify-center"></i>
+                            <i class="fa-solid fa-magnifying-glass flex items-center justify-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookStore__content__item__text">
+                    <h2>Book 7</h2>
+                    <p>£45</p>
+                </div>
+            </div>
+            <div class="bookStore__content__item">
+                <div class="bookStore__content__item__img flex items-center justify-center ">
+                    <img src="img/BookStore/bk13.jpg" alt="book">
+                    <div class="bookStore__content__item__overlay flex items-center justify-center ">
+                        <div class="bookStore__cart__list flex">
+                            <i class="fa-solid fa-cart-shopping flex items-center justify-center"></i>
+                            <i class="fa-solid fa-magnifying-glass flex items-center justify-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookStore__content__item__text">
+                    <h2>Book 6</h2>
+                    <p>£45</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news">
+    <div class="container">
+        <div class="news__header">
+            <div class="news__header__text">
+                <p class="divContent__headerText">From the News</p>
+                <div class="Yellow__line"></div>
+                <h2 class=" headerText">Latest News</h2>
+            </div>
+        </div>
+        <div class="news__content flex justify-between ">
+            <div class="news__content__item">
+                <div class="grid grid-rows-2">
+                    <img src="img/News/news_image_1.jpeg" alt="news">
+                    <div class="news__content__item__content">
+                        <div class="news__content__item__content__header flex">
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>17 July 2019 </span>
+                            </div>
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-regular fa-user"></i>
+                                <span> Mark Alen</span>
+                            </div>
+                        </div>
+                        <div class="news__content__item__content__text">
+                            <h3>How to Learn Faster and Remember</h3>
+                            <p>Scelerisque ante platea nullam himenaeos quam sollicitudin ullamcorper sodales
+                                tristique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__content__item">
+                <div class="grid grid-rows-2">
+                    <img src="img/News/news_image_3.jpeg" alt="news">
+                    <div class="news__content__item__content">
+                        <div class="news__content__item__content__header flex">
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>16 July 2019 </span>
+                            </div>
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-regular fa-user"></i>
+                                <span> Mark Alen</span>
+                            </div>
+                        </div>
+                        <div class="news__content__item__content__text">
+                            <h3>Free Online Courses from Top Universities</h3>
+                            <p>Scelerisque ante platea nullam himenaeos quam sollicitudin ullamcorper sodales
+                                tristique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__content__item">
+                <div class="grid grid-rows-2">
+                    <img src="img/News/news_image_2.jpg" alt="news">
+                    <div class="news__content__item__content">
+                        <div class="news__content__item__content__header flex">
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>16 April 2019 </span>
+                            </div>
+                            <div class="news__content__item__content__header__item">
+                                <i class="fa-regular fa-user"></i>
+                                <span> Mark Alen</span>
+                            </div>
+                        </div>
+                        <div class="news__content__item__content__text">
+                            <h3>Learn Exactly How I Improved Education</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slideFooter">
+    <div class="container flex justify-between">
+        <img src="img/slideFooter/icon1.png">
+        <img src="img/slideFooter/icon2.png">
+        <img src="img/slideFooter/icon3.png">
+        <img src="img/slideFooter/icon4.png">
+        <img src="img/slideFooter/icon5.png">
+    </div>
+</div>
+<footer>
+    <div class="container grid grid-cols-4">
+        <div class="footer__left">
+            <img src="img/white-logo.png">
+            <p>Edubin perfect for online courses and other institutes. It’s a complete solution with lms features and
+                functionalities.</p>
+            <div class="footer__left__social flex">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="featureLinks">
+            <h2> Feature Links</h2>
+            <div class="featureLinks__content grid grid-cols-2 gap-4">
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>About Us</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Graduation</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholarship</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Contact</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Result</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Admissions</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>International</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Teachers</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Alumni</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Events</span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="support ">
+            <h2>Support</h2>
+            <div class="support__content grid gap-4">
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Language</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Word Press</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Privacy</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>FAQs</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="contactUs">
+            <h2>Contact Us</h2>
+            <div class="contactUs__content">
+                <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 23-4567-8920</span>
+                </div>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@yourmail.com</span>
+                </div>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>www.yourdomain.com</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="container flex justify-between">
+            <p>© 2022 Design by ExNope</p>
+            <div class="footerBottom__right flex">
+                <p class="right__border">Language</p>
+                <p class="right__border">WordPress</p>
+                <p class="right__border">Privacy</p>
+                <p class="right__border">FAQs</p>
+                <p>Support</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
 </body>
 </html>
