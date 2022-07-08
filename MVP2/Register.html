@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7466eb4978.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+<header>
+    <div class="header__top text-white">
+        <div class="container">
+            <div class="header__topLeft">
+                <ul class="contact_info">
+                    <li class="contact_info__Item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#"> info@yoursite.com </a>
+                    </li>
+                    <li class="contact_info__Item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> 123-456-7890</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__topRight flex justify-end items-center">
+                <span>Follow Us:</span>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <div class="login_register">
+                    <a href="#">Login</a>
+                    <span>/</span>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="headerMenu">
+            <div class="headerMenu__logo">
+                <img src="img/logo.png" alt="logo" width="180" height="49">
+            </div>
+            <div class="headerMenu__menu flex justify-end">
+                <ul>
+                    <li><a href="#">Home
+                        <i class="fa-solid fa-angle-down"></i></a>
+                    </li>
+                    <li><a href="#">About
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Services
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Blog
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Contact
+                        <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="header__image">
+    <div class="container">
+        <h2>Student Registration</h2>
+        <p>Home / Student Registration</p>
+    </div>
+</div>
+<div class="register__form flex justify-center content-center">
+    <div class="container" style="background-color: white; padding: 3%">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="register__form__item">
+                <p>First Name</p>
+                <input type="text" placeholder="First Name" id="inputFirstName">
+            </div>
+            <div class="register__form__item">
+                <p>Last Name</p>
+                <input type="text" placeholder="Last Name" id="inputLastName">
+            </div>
+            <div class="register__form__item">
+                <p>User Name</p>
+                <input type="text" placeholder="User Name" id="inputUserName">
+            </div>
+            <div class="register__form__item">
+                <p>E-mail</p>
+                <input type="text" placeholder="E-mail" id="inputEmail">
+            </div>
+            <div class="register__form__item">
+                <p>Password</p>
+                <input type="text" placeholder="Password" id="inputPassword">
+            </div>
+            <div class="register__form__item">
+                <p>Password confirmation</p>
+                <input type="text" placeholder="Password confirmation" id="inputPassConfirm">
+            </div>
+        </div>
+        <div class="buttonRegister ">
+            <button onclick="checkRegister()">Register</button>
+        </div>
+    </div>
+</div>
+<footer style="top: 0px">
+    <div class="container grid grid-cols-4">
+        <div class="footer__left">
+            <img src="img/white-logo.png">
+            <p>Edubin perfect for online courses and other institutes. It’s a complete solution with lms features
+                and
+                functionalities.</p>
+            <div class="footer__left__social flex">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="featureLinks">
+            <h2> Feature Links</h2>
+            <div class="featureLinks__content grid grid-cols-2 gap-4">
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>About Us</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Graduation</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Scholarship</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Contact</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Result</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Admissions</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>International</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Teachers</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Alumni</span>
+                </div>
+                <div class="featureLinks__content__item">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Events</span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="support ">
+            <h2>Support</h2>
+            <div class="support__content grid gap-4">
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Language</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Word Press</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Privacy</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>FAQs</span>
+                </div>
+                <div class="support__content__item ">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="contactUs">
+            <h2>Contact Us</h2>
+            <div class="contactUs__content">
+                <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 23-4567-8920</span>
+                </div>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@yourmail.com</span>
+                </div>
+                <div class="contactUs__content__item">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>www.yourdomain.com</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="container flex justify-between">
+            <p>© 2022 Design by ExNope</p>
+            <div class="footerBottom__right flex">
+                <p class="right__border">Language</p>
+                <p class="right__border">WordPress</p>
+                <p class="right__border">Privacy</p>
+                <p class="right__border">FAQs</p>
+                <p>Support</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="Register.js"></script>
+</body>
+</html>

@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
     <script src="https://kit.fontawesome.com/7466eb4978.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+
+
 </head>
 <body>
 <header>
@@ -106,41 +113,47 @@
     </div>
 </div>
 <div class="container bodyContent">
-    <div class="slideLearn flex">
-        <h2>Best Platform to Learn Everything</h2>
-        <div class="flex items-baseline">
-        <span class="flex items-center justify-center arrow-left">
-            <i class="fa-solid fa-angle-left "></i></span>
-            <div class="slideLearn__slide flex items-baseline    ">
-                <div class="slideLearn__item " style="background-color:#FF6F6F ">
-                    <div class="flex items-center justify-center">
-                        <img src="img/events.png" alt="">
+    <div class="slideLearn flex ok">
+        <div class=" items-baseline slideLear-container">
+            <div class="silder-header">
+                <h2>Best Platform to Learn Everything</h2>
+            </div>
+            <div class="slideLearn__slide slideLear-content flex">
+                <div class="div__slideLearn__item">
+                    <div class="slideLearn__item " style="background-color:#FF6F6F ">
+                        <div class="flex items-center justify-center slideLearn__item-child">
+                            <img src="img/events.png" alt="">
+                        </div>
+                        <a href="#">Events</a>
                     </div>
-                    <a href="#">Events</a>
                 </div>
-                <div class="slideLearn__item " style="background-color:#4886FF ">
-                    <div class="flex items-center justify-center">
-                        <img src="img/admissions.png" alt="">
+                <div class="div__slideLearn__item">
+                    <div class="slideLearn__item " style="background-color:#4886FF ">
+                        <div class="flex items-center justify-center">
+                            <img src="img/admissions.png" alt="">
+                        </div>
+                        <a href="#">Admissions</a>
                     </div>
-                    <a href="#">Admissions</a>
                 </div>
 
-                <div class="slideLearn__item " style="background-color:#009688 ">
-                    <div class="flex items-center justify-center">
-                        <img src="img/notice.png" alt="">
+                <div class="div__slideLearn__item">
+                    <div class="slideLearn__item " style="background-color:#009688 ">
+                        <div class="flex items-center justify-center">
+                            <img src="img/notice.png" alt="">
+                        </div>
+                        <a href="#">Notice</a>
                     </div>
-                    <a href="#">Notice</a>
                 </div>
-                <div class="slideLearn__item " style="background-color:#F6316F ">
-                    <div class="flex items-center justify-center">
-                        <img src="img/courses.png" alt="">
+
+                <div class="div__slideLearn__item">
+                    <div class="slideLearn__item " style="background-color:#F6316F ">
+                        <div class="flex items-center justify-center">
+                            <img src="img/courses.png" alt="">
+                        </div>
+                        <a href="#">Courses</a>
                     </div>
-                    <a href="#">Courses</a>
                 </div>
             </div>
-            <span class="flex items-center justify-center arrow-right">
-            <i class="fa-solid fa-angle-right"></i>
-        </span>
         </div>
     </div>
 
@@ -230,133 +243,10 @@
     <div class="container">
         <p class="divContent__headerText">Our Courses</p>
         <div class="Yellow__line"></div>
-        <div class="ourCourses__header flex justify-between items-baseline">
+        <div class="ourCourses__header">
             <h2 style="display: inline-block" class=" headerText">Featured Courses</h2>
-            <div class="ourCourses__header__button ">
-                <button>
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button>
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
+            <div class="ourCourses__content flex justify-between ourCourses__button" id="ourCourses">
             </div>
-        </div>
-        <div class="ourCourses__content flex justify-between">
-            <div class="ourCourses__content__item grid gird-row-2">
-                <div class="ourCourses__content__item__img">
-                    <img src="img/coursesItem/2554.jpg" alt="">
-                </div>
-                <div class="ourCourses__content__item__price">
-                    <span>Free</span>
-                </div>
-                <div class="ourCourses__content__item__content">
-                    <div class="ourCourses__content__item__content__Rate flex ">
-                        <div class="ourCourses__content__star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <span>(1 review)</span>
-                    </div>
-                    <div class="ourCourses__content__item__content__title">
-                        <a href="#">
-                            C Programming Tutorials for Beginners
-                        </a>
-                    </div>
-
-                    <div class="ourCourses__content__item__content__bottom flex justify-between">
-                        <div class="flex ">
-                            <img src="img/student_1.jpg" alt="student avatar">
-                            <span>Tom Hardy</span>
-                        </div>
-                        <div class="flex items-baseline" style="padding-top: 3%">
-                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
-                            <span>10</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="ourCourses__content__item grid gird-row-2">
-                <div class="ourCourses__content__item__img">
-                    <img src="img/coursesItem/2554.jpg" alt="">
-                </div>
-                <div class="ourCourses__content__item__price">
-                    <span>Free</span>
-                </div>
-                <div class="ourCourses__content__item__content">
-                    <div class="ourCourses__content__item__content__Rate flex ">
-                        <div class="ourCourses__content__star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <span>(1 review)</span>
-                    </div>
-                    <div class="ourCourses__content__item__content__title">
-                        <a href="#">
-                            C Programming Tutorials for Beginners
-                        </a>
-                    </div>
-
-                    <div class="ourCourses__content__item__content__bottom flex justify-between">
-                        <div class="flex ">
-                            <img src="img/student_1.jpg" alt="student avatar">
-                            <span>Tom Hardy</span>
-                        </div>
-                        <div class="flex items-baseline" style="padding-top: 3%">
-                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
-                            <span>10</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="ourCourses__content__item grid gird-row-2">
-                <div class="ourCourses__content__item__img">
-                    <img src="img/coursesItem/2554.jpg" alt="">
-                </div>
-                <div class="ourCourses__content__item__price">
-                    <span>Free</span>
-                </div>
-                <div class="ourCourses__content__item__content">
-                    <div class="ourCourses__content__item__content__Rate flex ">
-                        <div class="ourCourses__content__star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <span>(1 review)</span>
-                    </div>
-                    <div class="ourCourses__content__item__content__title">
-                        <a href="#">
-                            C Programming Tutorials for Beginners
-                        </a>
-                    </div>
-
-                    <div class="ourCourses__content__item__content__bottom flex justify-between">
-                        <div class="flex ">
-                            <img src="img/student_1.jpg" alt="student avatar">
-                            <span>Tom Hardy</span>
-                        </div>
-                        <div class="flex items-baseline" style="padding-top: 3%">
-                            <i class="fa-regular fa-user" style="color: #ffc600"></i>
-                            <span>10</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
@@ -431,11 +321,14 @@
                 <div class="teacher__info__content">
                     <h2 class=" headerText">Meet our Teachers</h2>
                     <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
-                        equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
+                        equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet .
+                        Morbi
                         accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris.</p>
-                    <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+                        sit
                         amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                    <p>Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                    <p>Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+                        sit
                         amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
                 </div>
                 <button>Career With Us</button>
@@ -508,39 +401,52 @@
 </div>
 <div class="feedback">
     <div class="feedback__overlay"></div>
-    <div class="grid grid-rows-2 container" style="position: relative">
+    <div class="container" style="position: relative">
         <div class="feedback__header">
-            <p class="divContent__headerText" style="color:white;;">Teachers</p>
+            <p class="divContent__headerText" style="color:white;;">Feedback</p>
             <div class="Yellow__line" style="background-color: white"></div>
             <h2 class=" headerText">What Students Say</h2>
         </div>
         <div class="feedback__content">
-            <div class="grid grid-cols-2">
+            <div class="div__feedback__content__item">
                 <div class="feedback__content__item flex">
                     <img src="img/feedback/student_1.jpg" alt="student1" class="feedback__img">
                     <i class="fa-solid fa-quote-right quote-right flex justify-center items-center"></i>
                     <div class="feedback__content__item__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
-                            labore et dolore Lorem ipsum dolor sit amet.</p>
+                        <p>I recommend these courses to everyone, and wish you, guys, luck with the new studies! Lorem
+                            ipsum dolor sit amet consectetur adipisicing.</p>
                         <h6>Monica Blews</h6>
-                        <p>CFO Apple Corp</p>
+                        <p>UX Designer</p>
                     </div>
                 </div>
+            </div>
+            <div class="div__feedback__content__item">
                 <div class="feedback__content__item flex">
-                    <img src="img/feedback/student_1.jpg" alt="student1" class="feedback__img">
+                    <img src="img/feedback/student_2.jpg" alt="student1" class="feedback__img">
                     <i class="fa-solid fa-quote-right quote-right flex justify-center items-center"></i>
                     <div class="feedback__content__item__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                            ut
                             labore et dolore Lorem ipsum dolor sit amet.</p>
-                        <h6>Monica Blews</h6>
+                        <h6>James Smith</h6>
+                        <p>Apps Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div__feedback__content__item">
+                <div class="feedback__content__item flex">
+                    <img src="img/feedback/student_3.jpg" alt="student1" class="feedback__img">
+                    <i class="fa-solid fa-quote-right quote-right flex justify-center items-center"></i>
+                    <div class="feedback__content__item__text">
+                        <p>I am grateful for your wonderful course! Your tutors are the best, and I am completely
+                            satisfied with the level of professional teaching.</p>
+                        <h6>Eleanor Baker</h6>
                         <p>CFO Apple Corp</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
 <div class="bookStore">
     <div class="container">
@@ -699,19 +605,24 @@
     </div>
 </div>
 <div class="slideFooter">
-    <div class="container flex justify-between">
-        <img src="img/slideFooter/icon1.png">
-        <img src="img/slideFooter/icon2.png">
-        <img src="img/slideFooter/icon3.png">
-        <img src="img/slideFooter/icon4.png">
-        <img src="img/slideFooter/icon5.png">
+    <div class="container">
+        <div class="sliderFooter__content">
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon1.png" alt="icon slide footer"></div>
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon2.png" alt="icon slide footer"></div>
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon3.png" alt="icon slide footer"></div>
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon4.png" alt="icon slide footer"></div>
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon5.png" alt="icon slide footer"></div>
+            <div class="sliderFooter__content__item"><img src="img/slideFooter/icon6.png" alt="icon slide footer"></div>
+        </div>
+
     </div>
 </div>
 <footer>
     <div class="container grid grid-cols-4">
         <div class="footer__left">
             <img src="img/white-logo.png">
-            <p>Edubin perfect for online courses and other institutes. It’s a complete solution with lms features and
+            <p>Edubin perfect for online courses and other institutes. It’s a complete solution with lms features
+                and
                 functionalities.</p>
             <div class="footer__left__social flex">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -826,5 +737,7 @@
     </div>
 </footer>
 <script src="index.js"></script>
+
+
 </body>
 </html>

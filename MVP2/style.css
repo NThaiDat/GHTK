@@ -17,7 +17,17 @@
     display: inline-block;
     margin: 0.5em 0;
 }
-
+.slick-dots li button:before {
+    font-size: 20px !important;
+    color: #e3e3e3 !important;
+}
+.slick-dots button:before{
+    color: #fff !important; ;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+    color: #ffc600 !important;;
+}
 /*header*/
 
 .header__top {
@@ -210,6 +220,8 @@
     border-radius: 10px;
     margin-top: -260px;
     padding: 80px 90px 80px 72px;
+    width: 1140px;
+    /*justify-content:space-between;*/
 }
 
 .slideLearn h2 {
@@ -217,7 +229,6 @@
     font-weight: 700;
     color: white;
     line-height: 43px;
-    width: 30%;
     padding-bottom: 30px;
     /*margin-left: 2%;*/
 
@@ -238,12 +249,18 @@
 }
 
 .slideLearn__item {
+    position: relative;
     padding: 20px 8px;
     margin: 0 15px;
     border-radius: 5px;
     min-width: 29% !important;
     height: 170px !important;
     text-align: center;
+
+}
+
+. slideLearn__item-child {
+    width: 100%;
 }
 
 .slideLearn__item img {
@@ -264,7 +281,6 @@
 
 .slideLearn__slide {
     width: 600px !important;
-    overflow: hidden;
 }
 
 .aboutUs {
@@ -438,27 +454,27 @@
 }
 
 
-.ourCourses__header__button button {
+.ourCourses__button button {
     background: 0 0;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
     line-height: 36px;
     border-radius: 3px;
-    color: #000;
+    color: #000 !important;
     border: 2px solid #aaa;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
 }
 
-.ourCourses__header__button button:hover {
+.ourCourses__button button:hover {
     background: #ffc600;
     border: 2px solid #ffc600;
 }
 
 .ourCourses__content__item {
-    width: 30%;
+    width: 95%!important;
     position: relative;
 }
 
@@ -495,7 +511,7 @@
     font-weight: 600;
 }
 
-.ourCourses__content__star {
+.fa-star-active {
     color: #ffc600;
 }
 
@@ -728,7 +744,7 @@
 }
 
 .quote-right {
-    top: -20px;
+    top:0px;
     left: 70px;
     position: absolute;
     background-color: #ffc600;
@@ -737,7 +753,9 @@
     height: 45px;
     color: #07294d;
 }
-
+.feedback__content__item{
+    padding-top: 4%;
+}
 .feedback__content__item__text {
     padding-left: 40px;
     padding-right: 32px;
@@ -905,7 +923,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.sliderFooter__content__item{
+   display: inline-block;
+}
 /*footer*/
 footer {
     position: relative;
@@ -986,4 +1006,31 @@ footer span{
 }
 .right__border{
     border-right: 1px solid #e6e6e6;
+}
+
+.slideLear-container {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slideLear-content {
+    width: 65%;
+}
+.silder-header {
+    padding-right: 100px;
+    width: 35%;
+}
+.silder-header > h2 {
+    margin: 0;
+    padding: 0;
+}
+.slick-arrow {
+    color: white !important;
+    z-index: 99999999999999999999999;
+}
+
+.ok {
+    width: 100%;
 }
