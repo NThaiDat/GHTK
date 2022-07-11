@@ -11,6 +11,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="Responsive.css">
 
 
 </head>
@@ -18,7 +19,7 @@
 <header>
     <div class="header__top text-white">
         <div class="container">
-            <div class="header__topLeft">
+            <div class="header__topLeft Small__nonDisplay">
                 <ul class="contact_info">
                     <li class="contact_info__Item">
                         <i class="fa-solid fa-envelope"></i>
@@ -31,7 +32,7 @@
                 </ul>
             </div>
             <div class="header__topRight flex justify-end items-center">
-                <span>Follow Us:</span>
+                <span class="Small__nonDisplay">Follow Us:</span>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-youtube"></i>
@@ -39,7 +40,7 @@
                 <div class="login_register">
                     <a href="#">Login</a>
                     <span>/</span>
-                    <a href="#">Register</a>
+                    <a href="Register.html">Register</a>
                 </div>
             </div>
         </div>
@@ -49,7 +50,7 @@
             <div class="headerMenu__logo">
                 <img src="img/logo.png" alt="logo" width="180" height="49">
             </div>
-            <div class="headerMenu__menu flex justify-end">
+            <div class="headerMenu__menu flex justify-end Small__nonDisplay">
                 <ul>
                     <li><a href="#">Home
                         <i class="fa-solid fa-angle-down"></i></a>
@@ -66,7 +67,39 @@
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
-
+            <div class="headerMenu__menu__small flex justify-end Small__Display" style="display: none" >
+                <ul>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li>
+                        <button onclick="toggleHeaderMenu()"><i class="fa-solid fa-align-justify"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerMenu__menu__toggle" id="headerMenu__menu__toggle" style="display: none">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                        <i class="fa-solid fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -108,14 +141,14 @@
                 </div>
             </div>
         </div>
-        <i class="fa-solid fa-angle-left prev" onclick="plusSlides(-1)"></i>
-        <i class="fa-solid fa-angle-right next" onclick="plusSlides(1)"></i>
+        <i class="fa-solid fa-angle-left prev Small__nonDisplay" onclick="plusSlides(-1)"></i>
+        <i class="fa-solid fa-angle-right next Small__nonDisplay" onclick="plusSlides(1)"></i>
     </div>
 </div>
 <div class="container bodyContent">
-    <div class="slideLearn flex ok">
+    <div class="slideLearn flex">
         <div class=" items-baseline slideLear-container">
-            <div class="silder-header">
+            <div class="slider-header">
                 <h2>Best Platform to Learn Everything</h2>
             </div>
             <div class="slideLearn__slide slideLear-content flex">
@@ -135,7 +168,6 @@
                         <a href="#">Admissions</a>
                     </div>
                 </div>
-
                 <div class="div__slideLearn__item">
                     <div class="slideLearn__item " style="background-color:#009688 ">
                         <div class="flex items-center justify-center">
@@ -144,7 +176,6 @@
                         <a href="#">Notice</a>
                     </div>
                 </div>
-
                 <div class="div__slideLearn__item">
                     <div class="slideLearn__item " style="background-color:#F6316F ">
                         <div class="flex items-center justify-center">

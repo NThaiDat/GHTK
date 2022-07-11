@@ -8,7 +8,12 @@
     height: 3px;
     background-color: #FFC600FF;
 }
-
+.Small__Display{
+    display: none;
+}
+.arrow-right{
+   margin-left: 5px;
+}
 .headerText {
     font-family: "Montserrat", Sans-serif;
     font-size: 48px;
@@ -72,7 +77,6 @@
 .headerMenu__logo {
     padding: 1em 0;
     display: inline-block;
-
 }
 
 .headerMenu__menu {
@@ -99,7 +103,6 @@
 
 .headerMenu__menu ul li {
     display: inline-block;
-
 }
 
 .prev, .next {
@@ -279,9 +282,9 @@
     position: relative;
 }
 
-.slideLearn__slide {
-    width: 600px !important;
-}
+/*.slideLearn__slide {*/
+/*    width: 600px !important;*/
+/*}*/
 
 .aboutUs {
     position: relative;
@@ -1018,11 +1021,11 @@ footer span{
 .slideLear-content {
     width: 65%;
 }
-.silder-header {
+.slider-header {
     padding-right: 100px;
     width: 35%;
 }
-.silder-header > h2 {
+.slider-header > h2 {
     margin: 0;
     padding: 0;
 }
@@ -1031,6 +1034,3 @@ footer span{
     z-index: 99999999999999999999999;
 }
 
-.ok {
-    width: 100%;
-}

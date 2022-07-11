@@ -45,9 +45,40 @@ $('.slideLearn__slide').slick({
     prevArrow: "<button>" +
         "<span class=\"flex items-center justify-center arrow-left\">\n" +
         "<i class=\"fa-solid fa-angle-left \"></i></span></button>",
-    nextArrow: "<button> <span class=\"flex items-center justify-center arrow-right\">\n" +
+    nextArrow: "<button class='arrow-right'> <span class=\"flex items-center justify-center arrow-right\">\n" +
         " <i class=\"fa-solid fa-angle-right\"></i>\n" +
-        "  </span></button>"
+        "  </span></button>",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+
 });
 
 
@@ -122,12 +153,42 @@ function slideOurCourses() {
         autoplay: false,
         // arrows: true,
         autoplaySpeed: 1000,
-        prevArrow: "<button style='top: -62px;\n" +
+        prevArrow: "<button class='ourCourses__button__arrLeft' style='top: -62px;\n" +
             "    position: absolute;\n" +
             "    left: 1055px;'><i class=\"fa-solid fa-angle-left\"></i></button>",
-        nextArrow: "<button style='position: absolute;\n" +
+        nextArrow: "<button class='ourCourses__button__arrRight' style='position: absolute;\n" +
             "    right: 0px;\n" +
-            "    top: -62px;'><i class=\"fa-solid fa-angle-right\"></i></button>"
+            "    top: -62px;'><i class=\"fa-solid fa-angle-right\"></i></button>",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     });
 }
 
@@ -136,8 +197,38 @@ $('.feedback__content').slick({
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 1000,
-    dots: true
+    // autoplaySpeed: 1000,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $('.sliderFooter__content').slick({
     slidesToShow: 5,
@@ -145,4 +236,39 @@ $('.sliderFooter__content').slick({
     autoplay: false,
     arrows: false,
     autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
+
+let headerMenu = document.getElementById('headerMenu__menu__toggle');
+function toggleHeaderMenu() {
+    headerMenu.classList.toggle('activeHeaderMenu');
+}
