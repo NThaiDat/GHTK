@@ -214,6 +214,7 @@
     border-radius: 3px;
     margin: 7px;
     font-weight: 600;
+    transition: background-color 0.2s;
 }
 
 
@@ -313,6 +314,7 @@
     background-color: #ffc600;
     padding: 17px 30px;
     border-radius: 3px;
+    transition: background-color 0.2s;
 }
 
 .aboutUs__left button:hover {
@@ -431,6 +433,7 @@
     border-color: #ffc600;
     padding: 16px 32px;
     border-radius: 3px;
+    transition: background-color 0.2s;
 }
 
 .applyNow .buttonApply:hover {
@@ -480,7 +483,14 @@
     width: 95%!important;
     position: relative;
 }
+.ourCourses__content__item__img{
+    overflow: hidden;
+transition: transform 0.5s;
+}
 
+.ourCourses__content__item__img :hover{
+    transform: scale(1.1);
+}
 .ourCourses__content__item__price {
     position: absolute;
     left: 70%;
@@ -633,6 +643,7 @@
     background-color: #ffc600;
     padding: 17px 30px;
     border-radius: 3px;
+    transition: background-color 0.2s;
 }
 
 .teacher__info button:hover {
@@ -873,11 +884,16 @@
 
 .news__content__item {
     width: 32%;
+    overflow: hidden;
 }
 
 .news__content__item img {
     object-fit: cover;
     height: 100%;
+    transition: transform .5s;
+}
+.news__content__item img:hover {
+   transform: scale(1.1);
 }
 
 .news__content__item__content__header {
@@ -974,17 +990,27 @@ footer span{
 .featureLinks{
     padding-left: 35px;
 }
+
 .featureLinks i{
   color: #ffc600;
 }
+.featureLinks span{
+    transition: margin-left 0.2s,color 0.2s;
+
+}
 .featureLinks span:hover{
     color: #ffc600;
+    margin-left: 10%;
 }
 .support__content__item i{
     color: #ffc600;
 }
+.support span{
+    transition: margin-left 0.5s,color 0.2s;
+}
 .support span:hover{
     color: #ffc600;
+    margin-left: 10%;
 }
 .support{
     padding-right: 15px;

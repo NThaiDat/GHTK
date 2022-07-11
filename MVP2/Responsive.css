@@ -276,6 +276,9 @@
         padding: 0;
         margin-bottom: 20px;
     }
+    .div__slideLearn__item{
+        flex: 0 0 100%;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 1024px) {
@@ -395,4 +398,5 @@
     .slideLearn__slide .slick-list {
         width: 50%;
     }
+
 }
